@@ -1,0 +1,179 @@
+.goldman-regular {
+  font-family: "Goldman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.goldman-bold {
+  font-family: "Goldman", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.page_body {
+  margin: 0;
+}
+.page {
+  font-family: sans-serif;
+  font-size: 19px;
+  color: #333333;
+  line-height: 30px;
+  /* min-width: 1100px;
+  max-width: 1920px; */
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex; /* Needed for flex layout */
+  justify-content: space-between; /* Pushes left and right sides apart */
+  align-items: center; /* Vertically aligns items */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  padding: 0 40px;
+  background-color: #ffffff;
+  z-index: 9999; /* Ensures it stays above other elements */
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.h1__nav_logo {
+  font-family: "Goldman", sans-serif;
+  color: #1d3750;
+  font-size: 35px;
+}
+
+.h1__header_logo {
+  font-family: "Goldman", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  column-gap: 40px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.nav__link:hover {
+  color: #f4b408;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #1d3750;
+}
+
+.main__content {
+  /* min-width: 1100px;
+  max-width: 1920px;
+  margin: 0 auto; */
+}
+
+.main_head {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url(images/header2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 620px;
+  max-height: 700px;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.main_head__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 620px;
+  max-height: 700px;
+  width: 100%;
+}
+
+.main_head__content {
+  padding: 200px 85px 20px;
+  color: #ffffff;
+  width: 850px;
+  line-height: 50px;
+}
+
+.h3__header {
+  font-size: 29px;
+  font-weight: normal;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #f4b408;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background-color: #fdd055;
+}
+
+.intro_el {
+  background-color: #1d3750;
+  color: #ffffff;
+  padding: 75px;
+  text-align: center;
+}
+
+.intro_el__h2 {
+  margin-top: 0;
+}
+
+/* .menu_cards {
+  width: 1600px;
+} */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 75px auto 0;
+  padding: 0 275px;
+  list-style: none;
+}
+
+.card {
+  width: 420px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #f6f6f6;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 35px;
+}
+
+.card_icon {
+  margin-bottom: 20px;
+  height: 125px;
+}
+
+.card_title {
+  color: #f4b408;
+  text-decoration: none;
+}
