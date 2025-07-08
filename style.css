@@ -15,11 +15,10 @@
 }
 .page {
   font-family: sans-serif;
+  font-weight: lighter;
   font-size: 19px;
   color: #333333;
   line-height: 30px;
-  /* min-width: 1100px;
-  max-width: 1920px; */
   margin: 0 auto;
 }
 
@@ -72,17 +71,15 @@
   color: #333333;
 }
 
-.nav__link:hover {
-  color: #f4b408;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-color: #1d3750;
+.nav__link--contact {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ed3f3b;
+  padding: 5px;
 }
 
-.main__content {
-  /* min-width: 1100px;
-  max-width: 1920px;
-  margin: 0 auto; */
+.nav__link:hover {
+  color: #f4b408;
 }
 
 .main_head {
@@ -129,12 +126,40 @@
   letter-spacing: 2px;
 }
 
-.button:hover {
+.button:hover,
+.button--mission:hover {
   background-color: #fdd055;
 }
 
+.header__contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Optional spacing between the <p> tags */
+  margin-top: 25px;
+}
+
+.header__call,
+.header_contact {
+  margin: 0; /* Removes default paragraph spacing */
+}
+
+.header__call {
+  display: inline-block;
+  font-family: "Goldman", sans-serif;
+  font-size: 27px;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px black;
+}
+.header_contact {
+  display: inline-block;
+  font-family: "Goldman", sans-serif;
+  font-size: 27px;
+  color: #ed3f3b;
+  text-shadow: 2px 2px 2px black;
+}
+
 .intro_el {
-  background-color: #1d3750;
+  background-color: #0b1421;
   color: #ffffff;
   padding: 75px;
   text-align: center;
@@ -144,23 +169,27 @@
   margin-top: 0;
 }
 
-/* .menu_cards {
-  width: 1600px;
-} */
+.menu_cards {
+  background-image: url(images/schematic_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 250px;
+}
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 75px auto 0;
-  padding: 0 275px;
+  padding: 95px 125px;
   list-style: none;
+  margin: 0;
 }
 
 .card {
   width: 420px;
   box-sizing: border-box;
-  border-radius: 6px;
+  box-shadow: 1px 2px 2px #999999;
+  border-radius: 15px;
   background-color: #f6f6f6;
   font-weight: bold;
   font-size: 20px;
@@ -176,4 +205,40 @@
 .card_title {
   color: #f4b408;
   text-decoration: none;
+}
+
+.mission {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 500px;
+  background-image: url(images/engineer3.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.mission__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-left: auto;
+  background-color: #0b1421;
+  padding: 75px 130px;
+  color: #ffffff;
+  max-width: 35%;
+  background-size: contain;
+}
+
+.button--mission {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #f4b408;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 200px;
 }
