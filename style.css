@@ -57,6 +57,15 @@
   font-size: 40px;
 }
 
+.h2__mission {
+  font-family: "Goldman", sans-serif;
+  color: #ffffff;
+}
+
+.h2 {
+  font-family: "Goldman", sans-serif;
+}
+
 .nav__links {
   display: flex;
   list-style: none;
@@ -170,7 +179,7 @@
 }
 
 .menu_cards {
-  background-image: url(images/schematic_bg.png);
+  background-image: url(images/schematic3_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 250px;
@@ -190,7 +199,7 @@
   box-sizing: border-box;
   box-shadow: 1px 2px 2px #999999;
   border-radius: 15px;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -241,4 +250,36 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   width: 200px;
+}
+
+.content__block {
+  margin: 75px 130px;
+}
+
+.footer {
+  background-color: #f3f3f3;
+  margin: 0 auto;
+}
+
+.footer__nav {
+  display: flex;
+  background-color: #0b1421;
+  color: #f1f1f1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 75px 0 45px;
+}
+
+.footer__nav-links {
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+  padding: 0;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
 }
