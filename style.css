@@ -179,23 +179,26 @@
 }
 
 .menu_cards {
+  display: flex;
+  justify-content: center;
   background-image: url(images/schematic3_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 250px;
+  /* min-height: 250px; */
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 95px 125px;
+  column-gap: 105px;
+  /* justify-content: space-between; */
+  padding: 95px 0;
   list-style: none;
   margin: 0;
 }
 
 .card {
-  width: 420px;
+  width: 350px;
   box-sizing: border-box;
   box-shadow: 1px 2px 2px #999999;
   border-radius: 15px;
@@ -208,7 +211,7 @@
 
 .card_icon {
   margin-bottom: 20px;
-  height: 125px;
+  height: 100px;
 }
 
 .card_title {
@@ -253,7 +256,7 @@
 }
 
 .content__block {
-  margin: 75px 130px;
+  margin: 75px 130px 230px;
 }
 
 .footer {
