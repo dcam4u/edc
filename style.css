@@ -78,6 +78,7 @@
 .nav__link {
   text-decoration: none;
   color: #333333;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav__link--contact {
@@ -124,7 +125,8 @@
   font-weight: normal;
 }
 
-.button {
+.button,
+.button--mission {
   margin-top: 20px;
   padding: 15px;
   border-radius: 20px;
@@ -133,11 +135,14 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .button:hover,
 .button--mission:hover {
   background-color: #fdd055;
+  color: #1d3750; /* Optional: add contrasting hover color */
 }
 
 .header__contact-row {
@@ -218,6 +223,87 @@
   color: #f4b408;
   text-decoration: none;
 }
+
+/* MENU CARDS WITH FADE TRANSITION */
+
+.card_icon-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px; /* centers icon and spaces below */
+}
+
+.card_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.card_icon.hover {
+  opacity: 0;
+  z-index: 1;
+}
+
+.card_icon.default {
+  z-index: 2;
+}
+
+/* Hover behavior */
+.card:hover .card_icon.default {
+  opacity: 0;
+}
+
+.card:hover .card_icon.hover {
+  opacity: 1;
+}
+
+.card_title {
+  color: #f4b408;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card:hover .card_title {
+  color: #1d3750; /* Deep blue on hover */
+}
+
+/* Hover effect for the link text
+.card:hover .card_title {
+  color: #1d3750;
+}
+
+/* ICON SWAP ON HOVER */
+
+/* .services-icon {
+  content: url("images/services2_icon.png");
+  transition: content 0.3s ease;
+}
+
+.projects-icon {
+  content: url("images/projects_icon.png");
+  transition: content 0.3s ease;
+}
+
+.contact-icon {
+  content: url("images/contact2_icon.png");
+  transition: content 0.3s ease;
+} */
+
+/* Swap icons on hover */
+/* .card:hover .services-icon {
+  content: url("images/services2_icon_hover.png");
+}
+
+.card:hover .projects-icon {
+  content: url("images/projects_icon_hover.png");
+}
+
+.card:hover .contact-icon {
+  content: url("images/contact2_icon_hover.png");
+} */
 
 .mission {
   display: flex;
