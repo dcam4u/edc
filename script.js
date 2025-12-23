@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initSmoothScroll();
   initNavbarScroll();
   initContactForm();
+  initBackToTop();
 });
 
 /* ===================================
@@ -258,3 +259,23 @@ function closeSuccessMessage(button) {
     `;
   document.head.appendChild(style);
 })();
+
+/* Back to Top Button */
+function initBackToTop() {
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 500) {
+      backToTopBtn.classList.add("visible");
+    } else {
+      backToTopBtn.classList.remove("visible");
+    }
+  });
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
